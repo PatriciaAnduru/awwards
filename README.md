@@ -1,45 +1,82 @@
-# AWWARDS.
-:joy:
+# project-awwards
 
-## Author 
-* Anna Adhiambo.
+>[PatriciaAnduru](https://github.com/PatriciaAnduru)  
+  
+# Description  
+This project allows users to post their projects for other users to rate according to design, usability and content 
+##  Live Link  
+ Click [View Site]()  to visit the site
+  
+ 
+## User Story  
+  
+* A user can view posted projects and their details.  
+* A user can post a project to be rated/reviewed. 
+* A user can rate/ review other users' projects.  
+* Search for projects.  
+* View projects overall score.
+* A user can view their profile page.  
+  
 
-## Description.
-* Application to post projects to be rated by other users and visit the particular projects site.
-* Here is the [link](https://annawwards.herokuapp.com/) to my website.
-
-## How to access this
-
-You can access it by cloning the [Repository](https://github.com/annaadhiambo/Awwards.git)
+  
+## Setup and Installation  
+To get the project .......  
+  
+##### Cloning the repository:  
+ ```bash 
+ https://github.com/PatriciaAnduru/awwards.git 
 ```
-$ Open Terminal (Ctrl Alt T)
-$ git clone link 
-$ cd directory-name(Password)
-$ code .
+##### Navigate into the folder and install requirements  
+ ```bash 
+cd project-awwards pip install -r requirements.txt 
 ```
+##### Install and activate Virtual  
+ ```bash 
+- python3 -m venv virtual - source virtual/bin/activate  
+```  
+##### Install Dependencies  
+ ```bash 
+ pip install -r requirements.txt 
+```  
+ ##### Setup Database  
+  SetUp your database User,Password, Host then make migrate  
+ ```bash 
+python manage.py makemigrations instagram
+ ``` 
+ Now Migrate  
+ ```bash 
+ python manage.py migrate 
+```
+##### Run the application  
+ ```bash 
+ python manage.py runserver 
+``` 
+##### Testing the application  
+ ```bash 
+ python manage.py test 
+```
+Open the application on your browser `127.0.0.1:8000`.  
+  
+ ### Api Endpoints
+ * https://chawwards.herokuapp.com/api/users/
+ * https://chawwards.herokuapp.com/api/profile/
+ * https://chawwards.herokuapp.com/api/posts/
+ 
+ 
+## Technology used  
+  
+* [Python3.6](https://www.python.org/)  
+* [Django 1.11](https://docs.djangoproject.com/en/2.2/)  
+* [Heroku](https://heroku.com)  
+  
+  
+## Known Bugs  
+* There are no known bugs currently but pull requests are allowed incase you spot a bug  
+  
+## Contact Information   
+If you have any question or contributions, please email me at [andurupatricia@gmail.com]  
+  
+## License 
 
-## Features
-* User can log in to application and view other peoples posts.
-* A user can rate o a post.
-* A user can upload posts and edit their profile.
-* Admin can regulate images uploaded by deleting from the admin dashboard as well as completely close a users account.
-
-## Running the process
-* . virtual/bin/activate
-* To open local server run python3 manage.py runserver
-* To run the test,run python manage.py test instagram
-
-## Technology used
-* Python language.
-* Django: python framework.
-* HTML.
-* BOOTSTRAP.
-
-## How to contribute
-You can fork the project from the git hub and clone it by following the above instruction
-
-## Support and contact details
-* contact@ annaadhiambo01@gmail.com
-
-## License and Copyright
-Licensed under[MIT License](LICENSE)Copyright &2020
+* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](https://github.com/PatriciaAnduru/awwards/blob/master/LICENSE)  
+* Copyright (c) 2020 **Patricia Anduru**
